@@ -50,16 +50,6 @@ const $$ = (sel, scope=document) => Array.from(scope.querySelectorAll(sel));
   });
 })();
 
-// CSS page: toggle style + color picker
-(() => {
-  const btn = $("#styleToggleBtn");
-  const box = document.querySelector(".demo-toggle");
-  const picker = $("#colorPicker");
-  const demoText = $("#cssDemo");
-  if (btn && box) btn.addEventListener("click", () => box.classList.toggle("active"));
-  if (picker && demoText) picker.addEventListener("input", (e)=> demoText.style.color = e.target.value);
-})();
-
 // JS page: form validation
 (() => {
   const form = $("#contactForm");
